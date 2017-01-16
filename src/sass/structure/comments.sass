@@ -1,0 +1,62 @@
+.comments-page
+    &:before
+        content: ''
+        position: absolute
+        z-index: -1
+        display: block
+        width: 100%
+        height: 256px
+        background: $primary-color url($pat)
+
+    .side, .tabmenu
+        display: none
+
+    #header
+        box-shadow: none
+        background: transparent
+
+    .content
+        width: 66.666%
+        margin: 128px auto 0
+        padding: 0
+
+    .link
+        background: #fff
+        border-radius: 2px
+        padding: 16px
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+.commentarea
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    margin-top: 16px
+
+    > .usertext
+        -webkit-order: -1
+        -ms-flex-order: -1
+        order: -1
+        margin: 0
+        overflow: visible;
+
+.linklisting, .commentarea
+    .md
+        margin: 0
+
+.panestack-title, .commentarea .menuarea
+    display: inline-block
+    margin: 0
+    padding: 0
+
+.midcol
+    margin: 0
+
+body[class]>.content .link .midcol, .midcol-spacer
+    width: auto
+
+.usertext-edit
+    margin: 0 auto
+

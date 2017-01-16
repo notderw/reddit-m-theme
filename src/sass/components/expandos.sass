@@ -1,0 +1,24 @@
+.expando-button
+    margin: 0
+    width: 24px
+    height: 24px
+    opacity: .4
+
+    &:hover
+        opacity: .6
+
+    // &.expanded[class]
+    //     background: url($spritesheet)
+    //     background-position: -48px -96px
+
+    &.collapsed[class], &.collapsed[class]:hover
+        background: url($spritesheet)
+        background-position: -48px -72px
+
+    &.expanded.selftext, &.expanded.selftext:hover
+        background: url($spritesheet)
+        background-position: -48px -96px
+
+    &.collapsed.video, &.collapsed.video:hover
+        background: url($spritesheet)
+        background-position: -48px -124px

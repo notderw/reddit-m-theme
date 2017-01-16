@@ -1,0 +1,66 @@
+.nub
+    display: none
+
+// CORE
+button, .morelink, .fancy-toggle-button .option.active, .usertext .help-toggle, .usertext a.reddiquette, .sidecontentbox a.helplink, .gadget .right a, .sidecontentbox .more a, .c-btn
+    border: none
+    border-radius: 2px
+    color: #000
+    position: relative
+    height: 36px
+    margin: 0
+    min-width: 64px
+    padding: 0 16px
+    display: inline-block
+    font-family: inherit
+    font-size: 14px
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 0
+    overflow: hidden
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1)
+    outline: none
+    cursor: pointer
+    text-decoration: none
+    text-align: center
+    line-height: 36px
+    vertical-align: middle
+    box-sizing: border-box
+
+    a
+        color: inherit
+
+// HALF-HEIGHT
+.fancy-toggle-button .option.active, .usertext .help-toggle, .usertext a.reddiquette, .sidecontentbox a.helplink, .gadget .right a, .sidecontentbox .more a
+    line-height: 30px
+    height: 28px
+
+// FLOATING
+button, .submit .morelink, .fancy-toggle-button .option.add, .sidecontentbox a.helplink, .c-btn-primary
+    background: $primary-color
+    color: #fff
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+
+    a
+        color: inherit;
+
+    &:hover
+        background: lighten($primary-color, 6%)
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+
+    &:active
+        background: darken($primary-color, 12%)
+
+// FLAT
+.fancy-toggle-button .option.remove, .create .morelink, .usertext .help-toggle, .usertext a.reddiquette, .gadget .right a, .sidecontentbox .more a
+    background: none
+
+    &:hover
+        background-color: rgba(158,158,158,.2);
+
+        a
+            color: inherit
+
+    &:active
+        background-color: rgba(158,158,158,.4);
+

@@ -1,0 +1,303 @@
+#sr-header-area
+    display: inline-block
+    background: none
+    border: none
+    // height: 18px
+    // line-height: 18px
+
+#sr-header-area .width-clip
+    position: initial
+    left: initial
+    right: initial
+
+#sr-header-area .sr-list, #sr-more-link
+    display: none
+
+#header
+    height: 56px
+    line-height: 56px
+    border: none
+    background-color: $primary-color
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+
+    .dropdown.srdrop .selected
+        text-indent: -9999px
+        background: transparent url($spritesheet) 0 -48px
+        padding: 0
+        margin: 0 24px
+        width: 24px
+        height: 24px
+
+#header-bottom-left
+    display: inline-block
+    height: 56px
+
+#header-img.default-header
+    vertical-align: text-bottom
+    background: transparent url($spritesheet) 0 -24px
+    height: 24px
+    width: 30px
+    margin: 0
+
+.pagename
+    font-weight: normal
+    font-size: 0
+
+    a
+        position: relative
+        font-size: 20px
+        color: #fff
+        margin-left: 16px
+
+        &:hover
+            text-decoration: none
+
+        &:before
+            content: '/'
+            position: absolute
+            display: block
+            top: 2px
+            left: -12px
+            line-height: 1
+
+        &:after
+            border-radius: 2px
+            bottom: -4px
+            content: ' '
+            left: -4px
+            margin: auto
+            position: absolute
+            right: -4px
+            top: -4px
+            z-index: -1
+
+        &:active:after
+            background: rgba(0,0,0,.15);
+
+#search
+    position: absolute
+    top: 0
+    z-index: 99;
+    left: 320px;
+    right: 320px;
+    border-radius: 2px
+    background: rgba(255,255,255,.15)
+    margin: 10px 0
+    height: 36px
+    display: flex;
+    flex-direction: row;
+
+    input[type=submit]
+        padding: 0
+        flex: 0 0 24px;
+        order: -1;
+        height: 24px
+        margin: 6px 24px
+        outline: none
+        background: url($spritesheet) -24px -48px
+
+        &:hover
+            background: url($spritesheet) -24px -48px
+
+    input[type=text]
+        padding: 0
+        border: none
+        background: none
+        line-height: 36px
+        outline: none
+        color: #fff
+        flex: 2
+
+        &::placeholder
+            color: rgba(255,255,255,.6)
+            text-transform: capitalize
+
+#searchexpando
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    margin: 10px 0 0 !important //IMPORTANT IS FOR ANIMATION
+    padding: 16px
+    border: none
+    border-radius: 0 0 2px 2px;
+    background: #fff
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    p
+        margin: 0
+
+#header-bottom-right
+    top: 0
+    bottom: initial
+    background: none
+    padding: 0
+    line-height: inherit
+    border-radius: 0
+    margin-right: 30px
+
+    .separator
+        display: none
+
+.user
+    font-size: 16px;
+    color: #fff
+    margin-right: 16px
+
+    a
+        color: inherit
+        text-decoration: underline
+
+    body:not(.comments-page) &
+        position: absolute
+        top: 72px
+        right: -14px
+        line-height: 16px
+        width: 300px
+        text-align: center
+        color: #212121;
+        margin: 0
+
+        a
+            color: #5f99cf
+            text-decoration: none
+
+.beta-hint
+    position: initial
+    display: inline-block
+    height: auto
+
+    a
+        position: initial
+        margin: 0
+
+#mail, #modmail, #new_modmail, .pref-lang, .logout a
+    display: inline-block
+    text-indent: -9999px
+    vertical-align: middle
+    top: initial
+    margin: 0 6px
+    width: 24px
+    height: 24px
+    transform: scale(0.9)
+    overflow: visible
+
+    &:before
+        box-sizing: initial
+        content: ''
+        display: block
+        position: absolute
+        width: 100%;
+        height: 100%;
+        top: 0;
+        padding: 4px
+        margin-top: -4px
+        margin-left: -4px
+        border-radius: 50%
+        z-index: -1
+
+    &:active:before
+        background: rgba(0,0,0,.15)
+
+
+#mail[class]
+    background: transparent url($spritesheet) 0 0
+
+#modmail[class]
+    background: transparent url($spritesheet) -24px 0
+
+#new_modmail[class]
+    background: transparent url($spritesheet) -48px 0
+
+#modmail, #new_modmail
+    &.havemail:after
+        display: block
+        content: 'NEW'
+        position: absolute
+        top: 10px
+        right: -18px
+        font-weight: 600
+        font-size: 10px
+        height: 18px
+        line-height: 18px
+        padding: 0 4px
+        border-radius: 2px
+        background: #E91E63
+        color: #fff
+        text-indent: 0
+        pointer-events: none
+
+.pref-lang
+    background: transparent url($spritesheet) -72px 0
+
+.logout a
+    background: transparent url($spritesheet) -96px 0
+
+// NAV
+#header .tabmenu
+    top: 68px
+    bottom: 0
+    left: 0
+    color: #616161
+    line-height: 40px
+    overflow: hidden
+    padding: 0 8px
+    position: absolute
+    white-space: nowrap
+    width: 216px
+    margin: 0
+    height: 100vh
+
+    li
+        display: block
+        margin: 0
+
+        a
+            &:before
+                content: ''
+                display: inline-block
+                width: 24px
+                height: 24px
+                margin: 8px 24px 8px 0
+                vertical-align: top
+                opacity: .64
+                background: transparent url($spritesheet) 0 -72px
+
+            display: block
+            background: none
+            border: none
+            padding: 0 12px 0 16px
+            border-radius: 2px
+            color: #616161
+            font-weight: normal
+            font-size: 13px
+            text-transform: capitalize
+            border-radius: 2px;
+
+            &:hover
+                background-color: rgba(0,0,0,.03)
+
+            &[href*="/new/"]:before
+                background-position: 0 -96px
+
+            &[href*="/rising/"]:before
+                background-position: 0 -120px
+
+            &[href*="/controversial/"]:before
+                background-position: 0 -144px
+
+            &[href*="/top/"]:before
+                background-position: 0 -168px
+
+            &[href*="/gilded/"]:before
+                background-position: 0 -192px
+
+            &[href*="/wiki/"]:before
+                background-position: 0 -216px
+
+            &[href*="/ads/"]:before
+                background-position: 0 -240px
+
+        &.selected a
+            background-color: rgba(0,0,0,.05);
+            color: #212121;
+            font-weight: bold;

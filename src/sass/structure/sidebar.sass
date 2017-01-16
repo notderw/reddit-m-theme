@@ -1,0 +1,125 @@
+.side
+    margin: 84px 16px 0 0
+    background: none
+
+    .spacer
+        margin: 0
+        margin-bottom: 16px
+
+    .submit
+        display: inline-block
+        position: absolute;
+        top: 104px;
+        width: 142px
+
+        .morelink
+            width: 100%
+
+        &.submit-text
+            right: 16px
+
+    .create
+        .morelink
+            width: 100%
+
+        .spacer
+            display: none
+
+.titlebox
+    .redditname
+        display: none
+
+    .fancy-toggle-button
+        margin: 0 0 16px
+
+    .usertext
+        margin: 16px 0
+
+    .bottom
+        border-top: 1px solid $border-color
+        padding-top: 16px
+
+.number
+    margin-left: 8px
+
+.users-online
+    display: inline-block;
+
+    &:before
+        display: none
+
+    .number
+
+        &:before
+            content: '('
+
+        &:after
+            content: ' here)'
+
+    .word
+        display: none
+
+.titlebox form.toggle, .leavemoderator
+    background: none
+    color: #757575
+    line-height: 20px
+    padding: 0
+
+.sidecontentbox
+    display: flex;
+    flex-direction: column;
+
+    .title
+        padding-top: 8px
+        margin-bottom: 10px
+        border-top: 1px solid $border-color
+
+        h1
+            font-size: 14px
+            font-weight: 500;
+            line-height: 20px;
+            color: rgba(0,0,0,0.87);
+
+    .more a
+        text-indent: -9999px
+        padding: 0
+
+        &:before
+            text-indent: 0
+            display: block
+            content: 'ABOUT'
+
+    .content
+        border: none
+        padding: 0
+
+    a.helplink
+        width: 100%
+        margin-top: 16px
+        order: 1
+
+.icon-menu a
+    background: none
+
+.account-activity-box
+    display: none
+
+.gadget
+    .thing
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 8px;
+
+    .midcol
+        display: flex
+        flex: 0 0 19px
+        align-items: center
+        justify-content: center
+        flex-direction: column
+
+    .reddit-entry
+        margin-left: 8px
+        display: inline-block
+
+    .score
+        margin-left: 0
